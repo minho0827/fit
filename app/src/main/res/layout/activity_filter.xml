@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/Theme.Popup"
+                app:subtitleTextColor="@color/maincolor" />
+
+
+        </FrameLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="상의"
+                        android:textColor="@color/gray"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/notosans_cjkkr_bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/btn_blouse_shirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="BlouseShirt"
+                        android:text="블라우스\n셔츠"
+                        android:textColor="@color/black"
+                        android:textOff="블라우스\n셔츠"
+                        android:textOn="블라우스\n셔츠"
+                        android:textSize="15dp" />
+
+                    <ToggleButton
+                        android:id="@+id/btn_t_shirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="T-Shirt"
+                        android:text="티셔츠"
+                        android:textColor="@color/black"
+                        android:textOff="티셔츠"
+                        android:textOn="티셔츠"
+                        android:textSize="15dp" />
+
+
+                    <ToggleButton
+                        android:id="@+id/btn_sweatshirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Sweatshirt"
+                        android:text="스웻셔츠\n맨투맨"
+                        android:textColor="@color/black"
+                        android:textOff="스웻셔츠\n맨투맨"
+                        android:textOn="스웻셔츠\n맨투맨"
+                        android:textSize="15dp" />
+
+
+                    <ToggleButton
+                        android:id="@+id/btn_sweater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Sweater"
+                        android:text="니트\n스웨터"
+                        android:textColor="@color/black"
+                        android:textOff="니트\n스웨터"
+                        android:textOn="니트\n스웨터"
+                        android:textSize="15dp" />
+
+                    <ToggleButton
+                        android:id="@+id/btn_hoodie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Hoodie"
+                        android:text="후드"
+                        android:textColor="@color/black"
+                        android:textOff="후드"
+                        android:textOn="후드"
+                        android:textSize="15dp" />
+
+
+                    <ToggleButton
+                        android:id="@+id/btn_sleeveless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Sleeveless"
+                        android:text="나시"
+                        android:textColor="@color/black"
+                        android:textOff="나시"
+                        android:textOn="나시"
+                        android:textSize="15dp" />
+
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:visibility="invisible" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.25"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="20dp" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.25"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="20dp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="하의"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp"
+                    app:fontFamily="@font/notosans_cjkkr_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/btn_jeans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Jeans"
+                        android:text="청바지"
+                        android:textColor="@color/black"
+                        android:textOff="청바지"
+                        android:textOn="청바지"
+                        android:textSize="15dp" />
+
+                    <ToggleButton
+                        android:id="@+id/btn_jumpsuit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Jumpsuit"
+                        android:text="점프수트"
+                        android:textColor="@color/black"
+                        android:textOff="점프수트"
+                        android:textOn="점프수트"
+                        android:textSize="15dp" />
+
+
+                    <ToggleButton
+                        android:id="@+id/btn_leggings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Leggings"
+                        android:text="레깅스"
+                        android:textColor="@color/black"
+                        android:textOff="레깅스"
+                        android:textOn="레깅스"
+                        android:textSize="15dp" />
+
+                    <ToggleButton
+                        android:id="@+id/btn_pants"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Pants"
+                        android:text="바지"
+                        android:textColor="@color/black"
+                        android:textOff="바지"
+                        android:textOn="바지"
+                        android:textSize="15dp" />
+
+
+                    <ToggleButton
+                        android:id="@+id/btn_skirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Skirt"
+                        android:text="치마"
+                        android:textColor="@color/black"
+                        android:textOff="치마"
+                        android:textOn="치마"
+                        android:textSize="15dp" />
+
+
+                    <ToggleButton
+                        android:id="@+id/btn_shorts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Shorts"
+                        android:text="반바지"
+                        android:textColor="@color/black"
+                        android:textOff="반바지"
+                        android:textOn="반바지"
+                        android:textSize="15dp" />
+
+
+                    <ToggleButton
+                        android:id="@+id/btn_sweatpants"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="center"
+                        android:tag="Sweatpants"
+                        android:text="트레이닝\n팬츠"
+                        android:textColor="@color/black"
+                        android:textOff="트레이닝\n팬츠"
+                        android:textOn="트레이닝\n팬츠"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="아우터"
+                        android:textColor="@color/gray"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/notosans_cjkkr_bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+
+                        <ToggleButton
+                            android:id="@+id/btn_blazer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="Blazer"
+                            android:text="블레이저"
+                            android:textColor="@color/black"
+                            android:textOff="블레이저"
+                            android:textOn="블레이저"
+                            android:textSize="15dp" />
+
+
+                        <ToggleButton
+                            android:id="@+id/btn_vest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="Vest"
+                            android:text="조끼"
+                            android:textColor="@color/black"
+                            android:textOff="조끼"
+                            android:textOn="조끼"
+                            android:textSize="15dp" />
+
+
+                        <ToggleButton
+                            android:id="@+id/btn_coat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="Coat"
+                            android:text="코트"
+                            android:textColor="@color/black"
+                            android:textOff="코트"
+                            android:textOn="코트"
+                            android:textSize="15dp" />
+
+
+                        <ToggleButton
+                            android:id="@+id/btn_jacket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="Jacket"
+                            android:text="자켓"
+                            android:textColor="@color/black"
+                            android:textOff="자켓"
+                            android:textOn="자켓"
+                            android:textSize="15dp" />
+
+
+                        <ToggleButton
+                            android:id="@+id/btn_pufferdown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="Pufferdown"
+                            android:text="패딩"
+                            android:textColor="@color/black"
+                            android:textOff="패딩"
+                            android:textOn="패딩"
+                            android:textSize="15dp" />
+
+
+                        <ToggleButton
+                            android:id="@+id/btn_cardigan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="Cardigan"
+                            android:text="가디건"
+                            android:textColor="@color/black"
+                            android:textOff="가디건"
+                            android:textOn="가디건"
+                            android:textSize="15dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="원피스"
+                        android:textColor="@color/gray"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/notosans_cjkkr_bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/btn_dress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="Dress"
+                            android:text="드레스"
+                            android:textColor="@color/black"
+                            android:textOff="드레스"
+                            android:textOn="드레스"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="dress"
+                            android:text="드레스"
+                            android:textColor="@color/black"
+                            android:textOff="드레스"
+                            android:textOn="드레스"
+                            android:textSize="15dp"
+                            android:visibility="invisible" />ㅍ
+
+                        <ToggleButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="1"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:visibility="invisible" />
+
+
+                        <ToggleButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="1"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:visibility="invisible" />
+
+                        <ToggleButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="1"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:text="슈즈"
+                        android:textColor="@color/gray"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/notosans_cjkkr_bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/btn_shoes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="Shoes"
+                            android:text="신발"
+                            android:textColor="@color/black"
+                            android:textOff="신발"
+                            android:textOn="신발"
+                            android:textSize="15dp" />
+
+
+                        <ToggleButton
+                            android:id="@+id/sandal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="sandal"
+                            android:text="샌들"
+                            android:textColor="@color/black"
+                            android:textOff="샌들"
+                            android:textOn="샌들"
+                            android:textSize="10dp"
+                            android:visibility="invisible" />
+
+
+                        <ToggleButton
+                            android:id="@+id/boots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="boots"
+                            android:text="부츠"
+                            android:textColor="@color/black"
+
+                            android:textOff="부츠"
+                            android:textOn="부츠"
+                            android:textSize="10dp"
+                            android:visibility="invisible" />
+
+
+                        <ToggleButton
+                            android:id="@+id/dress_shoes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="1"
+                            android:text="구두"
+                            android:textColor="@color/black"
+                            android:textOff="구두"
+                            android:textOn="구두"
+                            android:textSize="10dp"
+                            android:visibility="invisible" />
+
+
+                        <ToggleButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="center"
+                            android:tag="1"
+                            android:text="구두"
+                            android:textColor="@color/black"
+                            android:textOff="구두"
+                            android:textOn="구두"
+                            android:textSize="10dp"
+                            android:visibility="invisible" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="컬러"
+                        android:textColor="@color/gray"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/notosans_cjkkr_bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/btn_red"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_ff0000"
+                            android:gravity="center"
+                            android:tag="red"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_yellow"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_ffd400"
+                            android:gravity="center"
+                            android:tag="yellow"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_orange"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_ff7f00"
+                            android:gravity="center"
+                            android:tag="orange"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_green"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_009900"
+                            android:gravity="center"
+                            android:tag="green"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_turquoise"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/green"
+                            android:gravity="center"
+                            android:tag="turquoise"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_pink"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/lightpink"
+                            android:gravity="center"
+                            android:tag="pink"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/btn_grey"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_808080"
+                            android:gravity="center"
+                            android:tag="grey"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_white"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_FFFFFF"
+                            android:gravity="center"
+                            android:tag="white"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓"
+                            android:textSize="15sp" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_black"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/black"
+                            android:gravity="center"
+                            android:tag="black"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_plum"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_811453"
+                            android:gravity="center"
+                            android:tag="plum"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+
+                        <ToggleButton
+                            android:id="@+id/btn_purple"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_660099"
+                            android:gravity="center"
+                            android:tag="purple"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_blue"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_0067a3"
+                            android:gravity="center"
+                            android:tag="blue"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ToggleButton
+                            android:id="@+id/btn_lime"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_81c147"
+                            android:gravity="center"
+                            android:tag="lime"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_navy"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_000080"
+                            android:gravity="center"
+                            android:tag="navy"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_brown"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_964b00"
+                            android:gravity="center"
+                            android:tag="brown"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="✓" />
+
+                        <ToggleButton
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn=""
+                            android:visibility="invisible" />
+
+                        <ToggleButton
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn=""
+                            android:visibility="invisible" />
+
+                        <ToggleButton
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_margin="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.25"
+                            android:background="@color/C_FDB900"
+                            android:gravity="center"
+                            android:tag="8"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn=""
+                            android:visibility="invisible" />
+
+
+                    </LinearLayout>
+
+                    <com.dpizarro.autolabel.library.AutoLabelUI
+                        android:id="@+id/label_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="80dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="60dp"
+                        android:background="@drawable/drawable_radius_login_logout"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawable_edit_radius_tag"
+                            android:fontFamily="@font/notosans_cjkkr_medium"
+                            android:hint="#페미닌 #20대룩"
+                            android:inputType="textAutoComplete"
+                            android:textColor="@color/white" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btAddLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/drawable_edit_radius_tag"
+
+                            android:text="추가" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/maincolor"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="초기화"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/maincolor"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="적용하기"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+</FrameLayout>
+
+

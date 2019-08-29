@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_item_0"
+        android:title="내옷장"
+        android:icon="@drawable/mycloset" />
+
+    <item
+        android:id="@+id/bottom_nav_item_1"
+        android:title="내코디"
+        android:icon="@drawable/outfit" />
+
+    <item
+        android:id="@+id/bottom_nav_item_2"
+        android:title="달력"
+        android:icon="@drawable/calender" />
+
+    <item
+        android:id="@+id/bottom_nav_item_3"
+        android:title="설정"
+        android:icon="@drawable/setting" />
+
+</menu>

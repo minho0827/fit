@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/drawable_card_stroke"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_garment"
+            android:layout_width="77dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="6dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/notosans_cjkkr_demi_light"
+            android:text="BYSERIES"
+            android:textColor="@color/C_9D9D9D"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+
+    <CheckBox
+
+        android:id="@+id/btn_check"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/checked_selector"
+        android:button="@android:color/transparent"
+        android:visibility="gone" />
+
+
+</FrameLayout>

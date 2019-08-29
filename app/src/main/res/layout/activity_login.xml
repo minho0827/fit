@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="66dp"
+                android:text="@string/str_login_title"
+                android:textAlignment="center"
+                android:textColor="@color/C_484848"
+                android:textSize="13sp" />
+
+
+            <!-- 네이버로 가입하기 -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="@dimen/common_margin_left_17dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginRight="@dimen/common_margin_right_17dp"
+                android:background="@color/navercolor">
+
+
+                <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+                    android:id="@+id/btn_oauth_naver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_fake_naver"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="30dp"
+                    android:background="@drawable/drawable_radius_naver_select_button"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/notosans_medium_font"
+                    android:gravity="center"
+                    android:text="@string/str_naver_signup"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="15dp"-->
+                <!--android:layout_height="13.7dp"-->
+                <!--android:layout_gravity="center|left"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:background="@drawable/naver_logo" />-->
+
+
+            </FrameLayout>
+
+
+            <!-- 카카오 가입하기 -->
+            <FrameLayout
+                android:id="@+id/frame_kakao"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="@dimen/common_margin_left_17dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="@dimen/common_margin_right_17dp"
+                android:background="@color/kakao_color">
+
+
+                <com.kakao.usermgmt.LoginButton
+                    android:id="@+id/btn_oauth_Kakao"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+
+                <!-- 카카오 아이콘 -->
+                <ImageView
+                    android:layout_width="19.8dp"
+                    android:layout_height="18.3dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/kakao_logo4x" />
+
+                <!-- 버튼 -->
+                <Button
+                    android:id="@+id/btn_fake_kakao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/drawable_radius_kakao_select_button"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/notosans_medium_font"
+                    android:gravity="center"
+                    android:text="@string/str_kakao_signup"
+                    android:textColor="@color/darkgray"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+
+            <!-- 구글 가입하기 -->
+            <FrameLayout
+                android:id="@+id/frame_google"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="@dimen/common_margin_left_17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/common_margin_right_17dp"
+                android:background="@drawable/drawable_radius_sns_button">
+
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/btn_oauth_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginBottom="15dp"
+                    android:visibility="gone"></com.google.android.gms.common.SignInButton>
+
+                <!-- 구글 아이콘 -->
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/google_logo_4x" />
+
+                <!-- 버튼 -->
+                <Button
+                    android:id="@+id/btn_fake_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/notosans_medium_font"
+                    android:gravity="center"
+                    android:text="@string/str_google_signup"
+                    android:textColor="@color/C_575757"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+
+            <!--페이스북으로 계속하기-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="@dimen/common_margin_left_17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/common_margin_right_17dp"
+                android:background="@color/C_3C5A99">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/btn_oauth_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/facebook_logo_4x" />
+
+                <!-- 버튼 -->
+                <Button
+                    android:id="@+id/btn_fake_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/notosans_medium_font"
+                    android:gravity="center"
+                    android:onClick="onClickFacebookButton"
+                    android:text="@string/str_facebook_signup"
+                    android:textColor="@color/C_FFFFFF"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/grid_design" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/notosans_regular_font"
+                android:gravity="center"
+                android:letterSpacing="-0.05"
+                android:text="@string/str_sign_up_to_email"
+                android:textColor="@color/C_000000"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="30dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/notosans_regular_font"
+                    android:gravity="center"
+                    android:letterSpacing="-0.05"
+                    android:text="이용약관"
+                    android:textColor="@color/C_575757"
+                    android:textSize="11sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/notosans_regular_font"
+                    android:gravity="center"
+                    android:letterSpacing="-0.05"
+                    android:text="|"
+                    android:textColor="@color/C_575757"
+                    android:textSize="11sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/notosans_regular_font"
+                    android:gravity="center"
+                    android:letterSpacing="-0.05"
+                    android:text="개인정보취급방침"
+                    android:textColor="@color/C_575757"
+                    android:textSize="11sp" />
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/notosans_regular_font"
+                    android:gravity="center"
+                    android:letterSpacing="-0.05"
+                    android:text="|"
+                    android:textColor="@color/C_575757"
+                    android:textSize="11sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/notosans_regular_font"
+                    android:gravity="center"
+                    android:letterSpacing="-0.05"
+                    android:text="문의하기"
+                    android:textColor="@color/C_575757"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+

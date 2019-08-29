@@ -1,0 +1,83 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="16dp"
+    android:background="@color/white"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:id="@+id/layout_meal_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/img_garment"
+            android:layout_width="93dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="15dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="7dp"
+            android:layout_marginTop="19dp"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/notosans_bold_font"
+                android:gravity="left"
+                android:text="SAMPLE"
+                android:textColor="@color/C_84888C"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/notosans_bold_font"
+                android:padding="1dp"
+                android:text="봄,여름"
+                android:textColor="@color/C_575757"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/linear_hash_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="9sp"
+                android:textColor="@color/C_BDBCBD"
+                android:text="#옐로우 #셔링 #긴팔 #터틀"
+                android:fontFamily="@font/notosans_cjkkr_demi_light"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

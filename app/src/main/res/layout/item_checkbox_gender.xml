@@ -1,0 +1,48 @@
+<!-- 성별 선택 아이템 화면 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_gender"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <!-- 체크박스 -->
+    <CheckBox
+        android:id="@+id/checkbox_circle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerInside" />
+
+    <!-- 아이템 텍스트 -->
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_gender"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_divider"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/checkbox_circle"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:textColor="@color/C_84888C"
+        android:textSize="16dp"
+        android:fontFamily="@font/notosans_cjkkr_medium" />
+
+    <!-- 구분선 -->
+    <View
+        android:id="@+id/layout_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/drawable_border_bottom" />
+
+</RelativeLayout>

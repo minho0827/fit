@@ -1,0 +1,2 @@
+include ':app', ':naveridlogin_android_sdk_4.2.0', ':libs:material-calendarview'
+project(':libs:material-calendarview').projectDir = new File('libs/material-calendarview-2.0.0/library')

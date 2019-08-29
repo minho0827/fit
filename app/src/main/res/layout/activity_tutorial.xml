@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <TextView
+        android:id="@+id/text_message_incoming"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/shape_bg_outgoing_bubble"
+        android:fontFamily="@font/notosans_cjkkr_demi_light"
+        android:lineSpacingExtra="2dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="4dp"
+        android:textStyle="bold"
+        android:paddingRight="35dp"
+        android:paddingBottom="10dp"
+        android:text="전체 코디 순서를 새로고침 합니다."
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+
+</FrameLayout>

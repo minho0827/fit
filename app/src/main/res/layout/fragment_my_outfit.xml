@@ -1,0 +1,154 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:orientation="horizontal">
+
+            <CheckedTextView
+                android:id="@+id/tv_spring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.7dp"
+                android:background="@color/C_F8F8F8"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/notosans_cjkkr_medium"
+                android:onClick="toggle"
+                android:paddingLeft="12dp"
+                android:paddingTop="1dp"
+                android:paddingRight="12.3dp"
+                android:paddingBottom="2dp"
+                android:text="#따뜻할때"
+                android:textColor="@color/C_606060"
+                android:textSize="11sp" />
+
+            <CheckedTextView
+                android:id="@+id/tv_summer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.7dp"
+                android:background="@color/C_F8F8F8"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/notosans_cjkkr_medium"
+                android:paddingLeft="18dp"
+                android:paddingTop="1dp"
+                android:paddingRight="16.3dp"
+                android:paddingBottom="2dp"
+                android:text="#더울 때"
+                android:textColor="@color/C_606060"
+                android:textSize="11sp" />
+
+            <CheckedTextView
+                android:id="@+id/tv_fall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.7dp"
+                android:background="@color/C_F8F8F8"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/notosans_cjkkr_medium"
+                android:paddingLeft="13dp"
+                android:paddingTop="1dp"
+                android:paddingRight="11.3dp"
+                android:paddingBottom="2dp"
+                android:text="#시원할 때"
+                android:textColor="@color/C_606060"
+                android:textSize="11sp" />
+
+            <CheckedTextView
+                android:id="@+id/tv_winter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.7dp"
+                android:background="@color/C_F8F8F8"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/notosans_cjkkr_medium"
+                android:paddingLeft="19dp"
+                android:paddingTop="1dp"
+                android:paddingRight="18.3dp"
+                android:paddingBottom="2dp"
+                android:text="#추울 때"
+                android:textColor="@color/C_606060"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_light">
+
+            <LinearLayout
+                android:id="@+id/linear_empty_codi"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_gravity="center"
+                    android:layout_height="70dp"
+                    android:background="@drawable/dress_" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/notosans_cjkkr_medium"
+                    android:text="@string/msg_weather_item_message" />
+
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab"
+                    style="@style/tab_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/white" />
+
+            </android.support.v4.view.ViewPager>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        app:backgroundTint="@color/maincolor"
+        android:scaleType="center"
+        android:src="@drawable/shuffle" />
+</FrameLayout>

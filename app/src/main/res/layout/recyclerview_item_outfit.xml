@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="8dp"
+    android:background="@drawable/drawable_card_stroke">
+
+    <include
+        android:id="@+id/view_outfit"
+        layout="@layout/view_outfit" />
+
+    <CheckBox
+        android:id="@+id/btn_favorite"
+        android:layout_width="14dp"
+        android:layout_height="12.7dp"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/favorite_selector"
+        android:button="@android:color/transparent"
+        android:visibility="visible" />
+
+</FrameLayout>

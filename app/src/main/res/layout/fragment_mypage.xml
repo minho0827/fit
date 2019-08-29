@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_bold_font"
+            android:text="S E T T I N G"
+            android:textColor="@color/C_010101"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/C_f0f0f0" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="18dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="7.4dp"-->
+        <!--android:layout_height="12dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="24dp"-->
+        <!--android:background="@drawable/left_arrow" />-->
+
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="141dp"-->
+        <!--android:fontFamily="@font/notosans_regular_font"-->
+        <!--android:text="SETTING"-->
+        <!--android:textColor="@color/C_010101"-->
+        <!--android:textSize="16dp" />-->
+        <!--</LinearLayout>-->
+        <!-- 로그인 했을경우 -->
+
+        <LinearLayout
+            android:id="@+id/layout_loggedin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:id="@+id/linear_notice"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/noti" />
+
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notosans_cjkkr_regular"
+                    android:text="@string/str_notice"
+                    android:textColor="@color/C_606060"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="7.4dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="18.6dp"
+                    android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/C_f0f0f0" />
+
+            <LinearLayout
+                android:id="@+id/linear_security"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/lock" />
+
+                <TextView
+                    android:id="@+id/tv_security"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_security"
+                    android:textColor="@color/C_606060"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:layout_width="7.4dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="18.6dp"
+                    android:src="@drawable/arrow_right" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/C_f0f0f0" />
+
+            <LinearLayout
+                android:id="@+id/linear_version"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/info" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="버전정보"
+                    android:textColor="@color/C_606060"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:layout_width="7.4dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="18.6dp"
+                    android:src="@drawable/arrow_right" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/C_f0f0f0" />
+
+            <LinearLayout
+                android:id="@+id/linear_logout"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/logout" />
+
+                <TextView
+                    android:id="@+id/tv_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_logout"
+
+                    android:textColor="@color/C_606060"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:layout_width="7.4dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="18.6dp"
+                    android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/C_f0f0f0" />
+
+        </LinearLayout>
+
+        <!-- 로그아웃 했을경우 -->
+
+
+        <FrameLayout
+            android:id="@+id/layout_loggedout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_profile_logout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/person" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="로그인" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="로그인 해주세요"
+                android:textSize="16sp" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="66dp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/notosans_regular_font"
+                android:text="유민호 님께"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/notosans_regular_font"
+                android:text="@string/str_collection_title"
+                android:textSize="13sp" />
+
+
+            <!--성별 선택 레이아웃 -->
+            <FrameLayout
+                android:id="@+id/frame_layout_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/common_margin_left_17dp"
+                android:layout_marginRight="@dimen/common_margin_right_17dp"
+                android:layout_marginTop="30dp">
+
+                <!-- 성별 선택 -->
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/drawable_radius_sns_button"
+                    android:fontFamily="@font/notosans_medium_font"
+                    android:gravity="center"
+                    android:hint="성별"
+                    android:textColor="@color/C_575757"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/arrow_down" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--나이 선택 레이아웃 -->
+                <FrameLayout
+                    android:id="@+id/frame_layout_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/common_margin_left_17dp"
+                    android:layout_marginRight="@dimen/common_margin_right_17dp"
+                    android:layout_marginTop="10dp">
+
+                    <!-- 나이 선택 -->
+                    <TextView
+                        android:id="@+id/tv_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/drawable_radius_sns_button"
+                        android:fontFamily="@font/notosans_medium_font"
+                        android:gravity="center"
+                        android:hint="나이"
+                        android:textSize="15sp" />
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/arrow_down" />
+
+                </FrameLayout>
+
+                <!-- 시작하기 버튼 -->
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_button_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/common_margin_left_17dp"
+                    android:layout_marginRight="@dimen/common_margin_right_17dp"
+                    android:layout_marginTop="21dp"
+                    android:background="@color/maincolor"
+                    android:gravity="center"
+                    android:text="@string/str_start"
+                    android:textColor="@color/white"
+                    android:textSize="17.5dp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/grid_design" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/notosans_cjkkr_medium"
+                    android:gravity="center"
+                    android:text="@string/str_collection_copyright"
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/notosans_cjkkr_medium"
+                    android:gravity="center"
+                    android:text="@string/str_collection_designby"
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
+

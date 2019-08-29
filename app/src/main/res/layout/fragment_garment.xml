@@ -1,0 +1,161 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/C_F8F8F8">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.intellisyscorp.fitzme_android.utils.MultiSpinner
+                    android:id="@+id/category"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/spinner_background"
+                    android:gravity="left"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+
+                <ImageView
+                    android:layout_width="8.4dp"
+                    android:layout_height="4.2dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10.6dp"
+                    android:background="@drawable/arrow" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.intellisyscorp.fitzme_android.utils.MultiSpinner
+                    android:id="@+id/color"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/spinner_background"
+                    android:gravity="left"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+
+
+                <ImageView
+                    android:layout_width="8.4dp"
+                    android:layout_height="4.2dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10.6dp"
+                    android:background="@drawable/arrow" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.intellisyscorp.fitzme_android.utils.MultiSpinner
+                    android:id="@+id/tag"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/spinner_background"
+                    android:gravity="left"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+
+                <ImageView
+                    android:layout_width="8.4dp"
+                    android:layout_height="4.2dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10.6dp"
+                    android:background="@drawable/arrow" />
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_edit_mode"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:background="@color/maincolor"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_select_garment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:background="@color/maincolor"
+                    android:fontFamily="@font/notosans_cjkkr_regular"
+                    android:text="6개 아이템"
+                    android:textColor="@color/C_FFFFFF"
+                    android:textFontWeight="1"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp" />
+
+
+                <Button
+                    android:id="@+id/btn_add_closet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/maincolor"
+                    android:fontFamily="@font/notosans_cjkkr_regular"
+                    android:text="옷장에추가하기"
+                    android:textColor="@color/C_FFFFFF"
+                    android:textFontWeight="1"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

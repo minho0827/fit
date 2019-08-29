@@ -1,0 +1,176 @@
+<!-- MemberJoinActivity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <!-- Top area -->
+    <include layout="@layout/layout_top_area" />
+
+    <!-- 전체화면 -->
+    <ScrollView
+        android:id="@+id/fullScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <!-- ScollView가 담고 있는 필수 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 회원가입 페이지 필요한 정보들이 담겨있는 레이아웃 -->
+            <LinearLayout
+                android:id="@+id/layout_joinLinear"
+                android:layout_width="match_parent"
+                android:layout_height="620dp"
+                android:layout_marginLeft="@dimen/common_margin_left_17dp"
+                android:layout_marginRight="@dimen/common_margin_right_17dp"
+                android:orientation="vertical">
+
+                <!-- 이름 -->
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="21dp"
+                    android:gravity="center|left"
+                    android:text="이름"
+                    android:textColor="@color/C_5D6067"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/notosans_cjkkr_medium" />
+
+                <!-- 이름 입력 공간 -->
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_radius_16px_stroke_white"
+                    android:elevation="1dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="이름"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/C_A5A9AC"
+                    android:textSize="18dp"
+                    android:windowSoftInputMode="adjustResize"
+                    android:fontFamily="@font/notosans_cjkkr_medium" />
+
+                <!-- 이메일 -->
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="21dp"
+                    android:gravity="center|left"
+                    android:text="@string/str_email"
+                    android:textColor="@color/C_5D6067"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/notosans_cjkkr_medium" />
+
+                <!-- 이메일 입력 공간 -->
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_radius_16px_stroke_white"
+                    android:elevation="1dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="@string/msg_push_emailAddress"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/C_A5A9AC"
+                    android:textSize="18dp"
+                    android:windowSoftInputMode="adjustResize"
+                    android:fontFamily="@font/notosans_bold_font" />
+
+                <!-- 비밀번호 -->
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="21dp"
+                    android:gravity="center|left"
+                    android:text="@string/str_password"
+                    android:textColor="@color/C_5D6067"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/notosans_cjkkr_medium" />
+
+                <!-- 비밀번호 입력 공간 -->
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_radius_16px_stroke_white"
+                    android:elevation="1dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="패스워드"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/C_A5A9AC"
+                    android:textSize="18dp"
+                    android:windowSoftInputMode="adjustResize"
+                    android:fontFamily="@font/notosans_bold_font" />
+
+                <!-- 비밀번호 입력 체크 공간 -->
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_password_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_radius_16px_stroke_white"
+                    android:elevation="1dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="패스워드 확인"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/C_A5A9AC"
+                    android:textSize="18dp"
+                    android:windowSoftInputMode="adjustResize"
+                    android:fontFamily="@font/notosans_bold_font" />
+
+            </LinearLayout>
+
+            <!-- 회원가입 버튼 -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_button_height"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="@dimen/common_margin_left_17dp"
+                android:layout_marginRight="@dimen/common_margin_right_17dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/drawable_radius_16px_gray"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:text="@string/str_sign_up"
+                android:textColor="@color/C_FFFFFF"
+                android:textSize="17dp"
+                android:fontFamily="@font/notosans_bold_font" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

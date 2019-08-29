@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/white"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        app:elevation="0dp"
+        app:popupTheme="@style/Theme.Popup"
+        app:theme="@style/Theme.GuidelinesCompat.Toolbar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosans_regular_font"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imgbtn_finish"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/close" />
+
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/C_f0f0f0" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_garment"
+                    android:layout_width="130dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/btn_add_calendar"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="달력 추가"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_spring"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.7dp"
+                        android:background="@color/C_F8F8F8"
+                        android:checked="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/notosans_cjkkr_medium"
+                        android:onClick="toggle"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12.3dp"
+                        android:text="#따뜻할때"
+                        android:textColor="@color/C_606060"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_summer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.7dp"
+                        android:background="@color/C_F8F8F8"
+                        android:checked="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/notosans_cjkkr_medium"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="16.3dp"
+                        android:text="#더울 때"
+                        android:textColor="@color/C_606060"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.7dp"
+                        android:background="@color/C_F8F8F8"
+                        android:checked="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/notosans_cjkkr_medium"
+                        android:paddingLeft="13dp"
+                        android:paddingRight="11.3dp"
+                        android:text="#시원할 때"
+                        android:textColor="@color/C_606060"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_winter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.7dp"
+                        android:background="@color/C_F8F8F8"
+                        android:checked="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/notosans_cjkkr_medium"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="18.3dp"
+                        android:text="#추울 때"
+                        android:textColor="@color/C_606060"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/lightgray" />
+
+                <FrameLayout
+                    android:id="@+id/frame_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="28dp"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="left"
+                            android:text="@string/str_category"
+                            android:textSize="11sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="45dp"
+                            android:fontFamily="@font/notosans_cjkkr_demi_light"
+                            android:gravity="left"
+                            android:text="@string/str_cate_sweater"
+                            android:textColor="@color/C_0F0F0F"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/lightgray" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="11dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="28dp"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:gravity="left"
+                        android:text="@string/str_brand"
+                        android:textSize="11sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/notosans_cjkkr_demi_light"
+                        android:gravity="left"
+                        android:textColor="@color/C_0F0F0F"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/lightgray" />
+
+                <FrameLayout
+                    android:id="@+id/frame_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="28dp"
+                            android:fontFamily="@font/notosans_cjkkr_bold"
+                            android:gravity="left"
+                            android:text="@string/str_color"
+                            android:textSize="11sp" />
+
+                        <LinearLayout
+                            android:layout_marginLeft="45dp"
+                            android:id="@+id/layout_colors"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/lightgray" />
+
+                <FrameLayout
+                    android:id="@+id/frame_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="28dp"
+                                android:fontFamily="@font/notosans_cjkkr_bold"
+                                android:gravity="left"
+                                android:text="@string/str_tag"
+                                android:textSize="11sp" />
+
+                            <LinearLayout
+                                android:id="@+id/layout_tags"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="28dp"
+                                android:orientation="horizontal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="43dp"
+                    android:background="@color/lightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="32dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/notosans_cjkkr_bold"
+                        android:text="@string/str_shopping_info"
+                        android:textColor="@color/C_696969"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_shopping"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_shopping_title"
+                                android:textColor="@color/black" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/tv_garment_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/notosans_cjkkr_demi_light"
+                                    android:text="shiring Blouse"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <android.support.v7.widget.AppCompatImageButton
+                                    android:id="@+id/imgbtn_like"
+                                    android:layout_width="16dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginRight="29dp"
+                                    android:background="@drawable/ic_favorite_border" />
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/notosans_cjkkr_medium"
+                                android:gravity="left"
+                                android:text="64,000"
+                                android:textColor="@color/orange"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_gravity="bottom"
+                android:background="@color/maincolor"
+                android:text="내 옷장에 추가하기"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

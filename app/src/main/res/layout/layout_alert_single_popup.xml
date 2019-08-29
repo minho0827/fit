@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="286dp"
+    android:layout_height="139dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dress_" />
+
+
+    <!-- 컨텐츠 내용 -->
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:fontFamily="@font/notosans_cjkkr_medium"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/C_84888C"
+        android:textSize="15dp" />
+
+    <!-- 버튼 -->
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/maincolor"
+        android:fontFamily="@font/notosans_cjkkr_medium"
+        android:gravity="center"
+        android:text="@string/str_confirm"
+        android:textColor="@drawable/drawable_alert_button_text_color"
+        android:textSize="17.5dp"
+        android:visibility="visible" />
+
+</LinearLayout>
